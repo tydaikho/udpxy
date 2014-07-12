@@ -118,9 +118,6 @@ static const char STAT_PAGE_FMT1[] =
     "    <td>%d</td>\n"
     "</tr>\n"
     "</table>\n"
-    "<form action=\"/restart/\" method=\"get\">\n"
-    "<input type=\"submit\" value=\"Restart\">\n"
-    "</form>\n"
     "\n"
     "%s"  /* Active clients table goes here */
     "%s"  /* Usage guide table */
@@ -185,7 +182,6 @@ static const char REQUEST_GUIDE[] =
         "<tr><td><small>http://<i>address:port</i>/udp/<i>mcast_addr:mport/</i></small></td>\n"
         "<td>Relay multicast traffic from mcast_addr:mport</td></tr>"
         "<tr><td><small>http://<i>address:port</i>/status/</small></td><td>Display udpxy status</td></tr>\n"
-        "<tr><td><small>http://<i>address:port</i>/restart/</small></td><td>Restart udpxy</td></tr>\n"
     "</table>\n";
 
 

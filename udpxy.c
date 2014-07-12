@@ -901,12 +901,6 @@ process_command( int new_sockfd, struct server_ctx* ctx )
     else if( 0 == strncmp( ctx->rq.cmd, CMD_STATUS, sizeof(ctx->rq.cmd) ) ) {
         rc = report_status( new_sockfd, ctx, STAT_OPTIONS );
     }
-    else if( 0 == strncmp( ctx->rq.cmd, CMD_RESTART, sizeof(ctx->rq.cmd) ) ) {
-        (void) report_status( new_sockfd, ctx, RESTART_OPTIONS );
-
-        terminate_all_clients( ctx );
-        wait_all( ctx );
-    }
     else {
         TRACE( (void)tmfprintf( g_flog, "Unrecognized command [%s]"
                     " - ignoring.\n", ctx->rq.cmd) );
