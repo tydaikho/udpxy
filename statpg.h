@@ -84,8 +84,6 @@ static const char* STAT_PAGE_BASE[] = {
     "}\n",
 
     "#pgCont {\n"
-    "    margin: 1em;\n"
-    "    padding: 2em 2em 0.5em;\n"
     "}\n"
     "#footer {\n"
     "    margin: 2em 0 0.5em;\n"
